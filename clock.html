@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital World Clock - Display current time across multiple time zones">
+    <title>Digital World Clock | Multi-Timezone Display</title>
+    <link rel="stylesheet" href="clock-styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>⏰ Digital World Clock</h1>
+            <p>Current time across multiple time zones</p>
+        </header>
+
+        <!-- Controls Section -->
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="timezoneSearch" placeholder="Search or add timezone..." />
+                <button id="addTimezoneBtn" class="btn-add">+ Add Timezone</button>
+            </div>
+            
+            <div class="preset-timezones">
+                <h3>Quick Add:</h3>
+                <button class="preset-btn" data-timezone="UTC">UTC</button>
+                <button class="preset-btn" data-timezone="Africa/Lagos">Lagos (WAT)</button>
+                <button class="preset-btn" data-timezone="Europe/London">London (GMT/BST)</button>
+                <button class="preset-btn" data-timezone="America/New_York">New York (EST/EDT)</button>
+                <button class="preset-btn" data-timezone="Asia/Tokyo">Tokyo (JST)</button>
+                <button class="preset-btn" data-timezone="Australia/Sydney">Sydney (AEDT/AEST)</button>
+            </div>
+        </div>
+
+        <!-- Clocks Grid -->
+        <div class="clocks-grid" id="clocksGrid">
+            <!-- Clock cards will be generated here by JavaScript -->
+        </div>
+
+        <!-- Local Time Display -->
+        <div class="local-time-section">
+            <h2>Local Device Time</h2>
+            <div class="local-clock">
+                <div class="time" id="localTime">00:00:00</div>
+                <div class="date" id="localDate">Loading...</div>
+                <div class="timezone-name" id="localTimezoneName">Your Timezone</div>
+            </div>
+        </div>
+
+        <!-- Time Zone Information -->
+        <div class="info-section">
+            <h2>Available Time Zones</h2>
+            <div class="timezone-list">
+                <div class="timezone-category">
+                    <h4>Africa</h4>
+                    <div class="timezone-items">
+                        <span class="timezone-item">Africa/Lagos (WAT)</span>
+                        <span class="timezone-item">Africa/Cairo (EET)</span>
+                        <span class="timezone-item">Africa/Johannesburg (SAST)</span>
+                        <span class="timezone-item">Africa/Nairobi (EAT)</span>
+                    </div>
+                </div>
+                <div class="timezone-category">
+                    <h4>Europe</h4>
+                    <div class="timezone-items">
+                        <span class="timezone-item">Europe/London (GMT/BST)</span>
+                        <span class="timezone-item">Europe/Paris (CET/CEST)</span>
+                        <span class="timezone-item">Europe/Berlin (CET/CEST)</span>
+                        <span class="timezone-item">Europe/Moscow (MSK)</span>
+                    </div>
+                </div>
+                <div class="timezone-category">
+                    <h4>Asia</h4>
+                    <div class="timezone-items">
+                        <span class="timezone-item">Asia/Dubai (GST)</span>
+                        <span class="timezone-item">Asia/Kolkata (IST)</span>
+                        <span class="timezone-item">Asia/Bangkok (ICT)</span>
+                        <span class="timezone-item">Asia/Singapore (SGT)</span>
+                        <span class="timezone-item">Asia/Tokyo (JST)</span>
+                    </div>
+                </div>
+                <div class="timezone-category">
+                    <h4>Americas</h4>
+                    <div class="timezone-items">
+                        <span class="timezone-item">America/New_York (EST/EDT)</span>
+                        <span class="timezone-item">America/Chicago (CST/CDT)</span>
+                        <span class="timezone-item">America/Denver (MST/MDT)</span>
+                        <span class="timezone-item">America/Los_Angeles (PST/PDT)</span>
+                    </div>
+                </div>
+                <div class="timezone-category">
+                    <h4>Oceania</h4>
+                    <div class="timezone-items">
+                        <span class="timezone-item">Australia/Sydney (AEDT/AEST)</span>
+                        <span class="timezone-item">Australia/Melbourne (AEDT/AEST)</span>
+                        <span class="timezone-item">Pacific/Auckland (NZDT/NZST)</span>
+                        <span class="timezone-item">Pacific/Fiji (FJT)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for timezone selection -->
+    <div class="modal" id="timezoneModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select Time Zone</h2>
+            <input type="text" id="modalSearch" placeholder="Search timezone..." class="modal-search">
+            <div class="modal-list" id="modalList">
+                <!-- Timezones will be listed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="clock-script.js"></script>
+</body>
+</html>
