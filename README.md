@@ -30,10 +30,10 @@ Aquamek-contracting/
 ���── styles.css          # Stylesheet (responsive design)
 ├── script.js           # JavaScript (interactivity)
 ├── images/             # Image directory
-│   ├── logo.png        # Company logo
-│   ├── promo1.png      # 5% Discount promotion
-│   ├── promo2.png      # Client benefit program
-│   └── stamp.png       # Company stamp/seal
+│   ├── IMG_7506.png        # Company logo
+│   ├── IMG_7608.png      # 5% Discount promotion
+│   ├── IMG_7609.png      # Client benefit program
+│   └── IMG_7604.png       # Company stamp/seal
 └── README.md           # This file
 ```
 
@@ -53,10 +53,10 @@ cd Aquamek-contracting-
 ```
 
 2. **Add your images** to the `images/` folder:
-   - `logo.png` - Your company logo
-   - `promo1.png` - 5% discount promotional image
-   - `promo2.png` - Client benefits program image
-   - `stamp.png` - Company certification stamp
+   - `IMG_7506.png` - Your company logo
+   - `IMG_7608.png` - 5% discount promotional image
+   - `IMG_7609.png` - Client benefits program image
+   - `IMG_7604.png` - Company certification stamp
 
 3. **Open the website**:
    - Simply double-click `index.html` or
