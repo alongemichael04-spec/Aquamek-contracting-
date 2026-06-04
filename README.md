@@ -3,7 +3,7 @@
 This directory contains all images for the AQUAMEK CONTRACTING website.
 
 ## Image Files:
-- **logo.png** - Company logo (Image 1) - Shows the AQUAMEK branding and services offered
+- **IMG_7506.png** - Company logo (Image 1) - Shows the AQUAMEK branding and services offered
 - **promo1.png** - 5% Discount Special Offer (Image 2) - Promotion banner
 - **promo2.png** - Annual Best Client Benefit Program (Image 3) - Client benefits showcase
 - **stamp.png** - Company Official Stamp (Image 4) - CEO signature and company seal
